@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 
 body {
@@ -9,13 +9,14 @@ body {
 }
 
 .main-header {
-  background-image: url("/m/site_media/main-back.png");
+  background-image: url("/m/site_media/main-back-2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100vh;
 }
+
 
 .navigation {
   justify-content: space-between;
@@ -38,7 +39,6 @@ body {
   text-decoration: none;
   display: block;
   color: black;
-  text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   padding: 10px 20px;
   transition: 0.3s;
@@ -48,4 +48,70 @@ body {
 .nav-bar a:hover {
   color: white;
   background-color: #c8b1b2;
+}
+
+.hello-table {
+  margin-top: 18%;
+  margin-left: 25%;
+  width: 30%;
+  font-weight: bold;
+  padding: 20px 30px;
+  color: white;
+  font-size: 20pt;
+  font-family: "Roboto", sans-serif;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+}
+
+.sumbit-dialog {
+  margin-top: 15%;
+  margin-left: 25%;
+  width: 300px;
+  padding: 20px 30px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #fb4c2e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.form__label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+
+.form__input {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  border-radius: 15px;
+  padding: 16px 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  display: block;
 }

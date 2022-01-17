@@ -10,7 +10,6 @@
     <div class="main-header">
       <div class="navigation">
         <div class="logo">
-          ХОРС
         </div>
         <div class="nav-bar">
           <ul>
@@ -19,6 +18,33 @@
             <li><a href="#">Контакты</a></li>
             <li><a href="#">Наши проекты</a></li>
           </ul>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="hello-table">
+          Выполним работу по строительству и проектированию зданий
+        </div>
+        <div class="sumbit-dialog">
+          Вы ищите авторский подход или нестандартные решения в строительстве?
+          <span style="font-weight: bold;">Мы готовы показать вам новый подход к строительству и непревзойденное качество работы</span><br><br>
+          Заполните форму и наш менеджер с вами свяжется и ответит на все интересующие вас вопросы
+
+          <form action="" method="post">
+            {% csrf_token %}
+            <!-- <input id="your_name" type="text" name="your_name" value="{{ current_name }}"> -->
+            <!-- <input type="submit" value="OK"> -->
+
+            <!-- <table>
+            {{ form }}
+            </table> -->
+            <div class="form__group">
+              <input type="text" class="form__input" id="your_phone" placeholder="Телефон" required="" value="{{ current_telephone }}" />
+            </div>
+            <div class="form__group">
+              <input type="text" class="form__input" id="your_name" placeholder="Имя и фамилия" required="" value="{{ current_name }}" />
+            </div>
+            <input type="submit" value="Отправить заявку">
+          </form>
         </div>
       </div>
     </div>
